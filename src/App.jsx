@@ -4,12 +4,14 @@ import Home from "./pages/Home";
 import PropertyDetails from "./pages/PropertyDetails";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
+import Dashboard from "./pages/Dashboard";
 
 const routers = [
   { path: "/", element: <Home /> },
   { path: "/login", element: <Login /> },
   { path: "/signup", element: <SignUp /> },
   { path: "/property-detail/:id", element: <PropertyDetails /> },
+  {path: "/dashboard", element:<Dashboard/>}
 ];
 
 const router = createBrowserRouter(routers);

@@ -1,5 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import DashboardIcon from '@mui/icons-material/Dashboard';
+
 import logo from "../assets/logo.svg";
 const Header = () => {
   const location = useLocation();
@@ -12,6 +14,10 @@ const Header = () => {
         </Link>
 
         <div className="flex items-center gap-6">
+        <Link className="hover:text-violet-900" to="/dashboard">
+            <DashboardIcon />
+            Dashboard
+          </Link>
           <Link className="hidden hover:text-violet-900 sm:block" to="">
             About
           </Link>
