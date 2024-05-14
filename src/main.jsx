@@ -2,12 +2,19 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-import HouseContextProvider from "./components/HouseContextProvider.jsx";
+import { Provider } from "react-redux";
+import { store, persistor } from "./app/store.js";
+import HouseContextProvider from "./features/houses/HouseContextProvider.jsx";
+import { PersistGate } from "redux-persist/integration/react";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <HouseContextProvider>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </HouseContextProvider>,
+  <Provider store={store}>
+    <HouseContextProvider>
+      <React.StrictMode>
+        <PersistGate loading={null} persistor={persistor}>
+          <App />
+        </PersistGate>
+      </React.StrictMode>
+    </HouseContextProvider>
+  </Provider>,
 );

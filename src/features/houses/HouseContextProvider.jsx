@@ -1,6 +1,6 @@
 import React, { useState, useEffect, createContext } from "react";
 
-import { housesData } from "../data";
+import { housesData } from "../../data";
 
 export const HouseContext = createContext();
 

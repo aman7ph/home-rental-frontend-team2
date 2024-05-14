@@ -5,7 +5,7 @@ import PriceRangeDropdown from "./PriceRangeDropdown";
 import PropertyDropdown from "./PropertyDropdown";
 import CountryDropdown from "./CountryDropdown";
 
-import { HouseContext } from "./HouseContextProvider";
+import { HouseContext } from "../HouseContextProvider";
 
 const Search = () => {
   const { HandleSearch } = useContext(HouseContext);
