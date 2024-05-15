@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { HouseContext } from "./HouseContextProvider";
+import { HouseContext } from "../HouseContextProvider";
 import { Link } from "react-router-dom";
 
 import House from "./House";

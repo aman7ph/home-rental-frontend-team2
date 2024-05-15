@@ -1,9 +1,8 @@
 import React from "react";
 import { BiBed, BiBath, BiArea } from "react-icons/bi";
 import { Link, useParams } from "react-router-dom";
-import { housesData } from "../data";
-import Header from "../components/Header";
-import Carousel from "../components/Carousel";
+import { housesData } from "../../../data";
+import Carousel from "./Carousel";
 
 const PropertyDetails = () => {
   const { id } = useParams();
@@ -14,7 +13,6 @@ const PropertyDetails = () => {
 
   return (
     <div className="min-h-screen">
-      <Header />
       <section>
         <div className="container mx-auto mb-14">
           <div className="mb-3">

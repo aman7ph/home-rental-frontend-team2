@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 
-import { HouseContext } from "./HouseContextProvider";
+import { HouseContext } from "../HouseContextProvider";
 
 import {
   RiWallet3Line,
