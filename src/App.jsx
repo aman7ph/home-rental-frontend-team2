@@ -2,6 +2,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 
 import Home from "./pages/Home";
+
+
+import Dashboard from "./pages/Dashboard";
+
+
 import PropertyDetails from "./features/houses/components/PropertyDetails";
 import Login from "./features/auth/components/Login";
 import SignUp from "./features/users/components/SignUp";
@@ -22,6 +27,7 @@ const routers = [
       { path: "/reset-password/:token", element: <ResetPassword /> },
       { path: "/signup", element: <SignUp /> },
       { path: "/property-detail/:id", element: <PropertyDetails /> },
+      {path: "/dashboard", element:<Dashboard/>}
     ],
   },
   {
@@ -34,6 +40,7 @@ const routers = [
       },
     ],
   },
+
 ];
 
 const router = createBrowserRouter(routers);
